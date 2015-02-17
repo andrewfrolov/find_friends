@@ -1,22 +1,22 @@
 #!/usr/bin/env python
 """
 Tester module for Vkontakte downloader.
+Works with Python 3.4
 Uses download.py
 Tests the main function calls,
 like vk('users.get', 137589139)
 """
 __author__ = 'Yuliy Lobarev'
-__name__='Tester module for Vkontakte downloader'
+__name__ = 'Tester module for Vkontakte downloader'
 from prototype.vk.download import vk, getfriends
 import time
 import json
 import io
-#import sys
-#import os
-#import download
-#sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
-output = {}
-output['users.get'] = {37740532: vk('users.get', 37740532)}
+# import sys
+# import os
+# import download
+# sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+output = {'users.get': {37740532: vk('users.get', 37740532)}}
 time.sleep(0.36)
 output['friends.get'] = {37740532: vk('friends.get', 37740532)}
 time.sleep(0.36)

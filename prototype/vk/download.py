@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 """
 Vkontakte downloader module. Uses API.
+Works with Python 3.4
 """
 __author__ = 'Yuliy Lobarev'
 __name__ = 'Vkontakte downloader (via API)'
 import urllib.request, urllib.error, urllib.parse
 import json
-import sys
+# import sys
 
 def vk(meth, vkid = 0):
     """
