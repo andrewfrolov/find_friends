@@ -16,6 +16,7 @@ import io
 # import os
 # import download
 # sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
 output = {'users.get': {37740532: vk('users.get', 37740532)}}
 time.sleep(0.36)
 output['friends.get'] = {37740532: vk('friends.get', 37740532)}
@@ -26,6 +27,8 @@ output['wall.get'] = {37740532: vk('wall.get', 37740532)}
 # print(vk('wall.get', 9393002)) Get an error, wall isn't accessible
 time.sleep(0.36)
 output['getfriends()'] = {37740532: getfriends(37740532)}
+
+## output = {'execute': {37740532: vk('execute', 37740532)}} # Test for execute
 
 with open('tester.json', 'w') as f:
     json.dump(output, f, indent=4)
