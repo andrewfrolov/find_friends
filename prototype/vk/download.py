@@ -25,7 +25,8 @@ def vk(meth, vkid=0):
         return list()
     method = {
         'friends.get': 'user_id={0}',  # List of friends
-        'users.get': 'user_ids={0},fields:followers_count',  # Extended information about user
+        'users.getSubscriptions': 'user_id={0}&fields=deactivated,hidden',  # Subscriptions
+        'users.get': 'user_ids={0}&fields=followers_count',  # Extended information about user
         'wall.get': 'owner_id={0}&count=20',  # Messages from the wall
         'groups.get': 'user_id={0}&access_token=' + token,  # Doesn't work without token...
         'groups.getById': 'group_ids={0}&fields=contacts,description,members_count',  # Information about group

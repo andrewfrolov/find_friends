@@ -26,6 +26,8 @@ time.sleep(0.36)
 output['wall.get'] = {37740532: vk('wall.get', 37740532)}
 # print(vk('wall.get', 9393002)) Get an error, wall isn't accessible
 time.sleep(0.36)
+output['users.getSubscriptions'] = {37740532: vk('users.getSubscriptions', 37740532)}
+time.sleep(0.36)
 output['getfriends()'] = {37740532: getfriends(37740532)}
 
 ## output = {'execute': {37740532: vk('execute', 37740532)}} # Test for execute

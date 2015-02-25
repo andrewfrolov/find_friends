@@ -8,7 +8,7 @@ __author__ = 'Yuliy Lobarev'
 __name__ = 'Main module for Vkontakte downloader'
 from prototype.vk.download import vk, getfriends
 import time
-# import json
+import json
 
 def query_user(friends_list):
     full_output = {}
